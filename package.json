@@ -1,0 +1,14 @@
+
+{
+  "name": "clipper-ai",
+  "version": "1.0.0",
+  "description": "Clipper AI video clipping website",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2"
+  }
+}
