@@ -1,1 +1,48 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clipper AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✂️ Clipper AI</h1>
+    <p>Jadikan video panjang sebagai klip pendek.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Unggah video</h2>
+      <input id="videoInput" type="file" accept="video/*">
+      <button id="uploadButton">Pilih video</button>
+      <video id="videoPreview" controls></video>
+    </section>
+
+    <section class="panel">
+      <h2>Potong klip manual</h2>
+      <label for="startTime">Mulai (detik)</label>
+      <input id="startTime" type="number" min="0" value="0">
+
+      <label for="endTime">Selesai (detik)</label>
+      <input id="endTime" type="number" min="1" value="15">
+
+      <button id="previewClip">Lihat bagian klip</button>
+      <p id="message">Pilih video terlebih dahulu.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Tautan YouTube</h2>
+      <input id="youtubeUrl" type="url"
+        placeholder="Tempel tautan YouTube">
+      <button id="checkButton">Periksa tautan</button>
+      <p id="youtubeMessage"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
